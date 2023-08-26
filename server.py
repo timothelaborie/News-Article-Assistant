@@ -124,12 +124,11 @@ class GetSummary(Resource):
             original_text_64, 
             ):
 
-
-
         # Decoding the base64 string
         decoded_bytes = base64.b64decode(original_text_64)
         original_text = decoded_bytes.decode('utf-8', errors='ignore')
 
+        original_text = original_text[:2000]
         print("original_text:", original_text)
 
         prompt = f"""Summarize this article: 

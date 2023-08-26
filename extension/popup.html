@@ -7,18 +7,26 @@
 <style type="text/css">
   body {
     margin: 5px;
+    min-width: 600px;
+    min-height: 800px;
   }
 
   h1 {
     font-size: 15px;
     text-align: center;
   }
+
+  #original_text{
+    max-width: 500px;
+    max-height: 500px;
+  }
 </style>
 
 <body>
-  <button id="summarize">Summarize article</button>
-  <button id="extract" disabled>Extract arguments from article</button>
-  <button id="generate" disabled>Generate image from article</button>
+  <textarea id="original_text"></textarea><br>
+  <button id="summarize">Summarize article</button><br>
+  <button id="extract" disabled>Extract arguments from article</button><br>
+  <button id="generate" disabled>Generate image from article</button><br>
 
   
   
