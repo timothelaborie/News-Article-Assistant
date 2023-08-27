@@ -14,38 +14,35 @@ Simplify your reading experience with the News Article AI Assistant – your ult
 1. **Article Summarization**
 2. **Feature 2 (Upcoming)**
 3. **Feature 3 (Upcoming)**
-4. **Feature 4 (Upcoming)**
 
 ## 🚦 Getting Started
-
 ### Prerequisites
-
 Before you begin, ensure you have met the following requirements:
-
 - Python 
-- Enabled  "Developer Mode" on Chrome ( dont know how ? go to #usage )
-
-### Installation
-
+- Enabled "Developer Mode" on Chrome
+  
+### Installation Guide
 1. Clone the repository.
    ```sh
    git clone https://github.com/faranbutt/News-Article-Assistant
    cd News-Article-Assistant
-## 📖 Usage
+   
+## 📖 Usage Guide
+
 To effectively our application, follow these steps:
 1. **Open the Chrome Browser**
    - Launch your Google Chrome web browser.
 2. **Access Extension Settings**
-   - Click on the three vertical dots in the top-right corner to open the Chrome menu.
-   - Navigate to "More tools" and select "Extensions."
+   - Click on ⋮ the top-right corner to open the Chrome menu.
+   - Navigate to "More tools" & select "Extensions."
 3. **Enable Developer Mode**
    - Toggle on the "Developer mode" switch in the top-right corner of the Extensions page. This mode allows you to load unpacked extensions.
 4. **Load the Extension**
    - Download the repository ZIP and extract it to a location on your computer.
-   - In the Extensions page, click on the "Load unpacked" button.
+   - On the Extensions page, click on the "Load unpacked" button.
    - Navigate to the extracted "extension" folder from the downloaded repository and select it.
 5. **Start Using the Assistant**
-   - Now you've done all the necessary steps you're good to go !
+   - 🎉 Now you've done all the necessary steps you're good to go 
 
 NOTE: Llama2 & Clarifai Hackathon Submission: 28/08/2023
 
