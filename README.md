@@ -23,7 +23,7 @@ Simplify your reading experience with the News Article AI Assistant – your ult
 Before you begin, ensure you have met the following requirements:
 
 - Python 
-- Enabled  "Developer Mode" on Chrome
+- Enabled  "Developer Mode" on Chrome ( dont know how ? go to #usage )
 
 ### Installation
 
