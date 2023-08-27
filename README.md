@@ -1,3 +1,7 @@
+## Development TO-DO 
+Summarization
+
+
 ## 📋 Table of Contents
 
 - [Getting Started](#getting-started)
@@ -5,7 +9,7 @@
   - [Installation](#installation)
 - [Usage](#usage)
   - [Example](#example)
-- [Contributing](#contributing)
+- [Contributing](#contributing)  
 - [License](#license)
 - [Contact](#contact)
 
@@ -24,3 +28,5 @@ Before you begin, ensure you have met the following requirements:
    ```sh
    git clone https://github.com/faranbutt/News-Article-Assistant
    cd News-Article-Assistant
+   
+# NOTE: Llama2 & Clarifai Hackathon Submission: 28/08/2023
