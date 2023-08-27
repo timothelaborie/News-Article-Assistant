@@ -119,26 +119,51 @@ You are a helpful assistant. Always answer as helpfully as possible.
 
 
 class GetSummary(Resource):
-
     def post(self, 
             original_text_64, 
             ):
 
-        # Decoding the base64 string
-        decoded_bytes = base64.b64decode(original_text_64)
-        original_text = decoded_bytes.decode('utf-8', errors='ignore')
-
-        original_text = original_text[:2000]
+        original_text = base64.b64decode(original_text_64).decode('utf-8', errors='ignore')[:2000]
         print("original_text:", original_text)
-
         prompt = f"""Summarize this article: 
 {original_text}"""
-
-        summary = get_ai_response(prompt)
-
+        response = get_ai_response(prompt)
         return jsonify({
-            'summary': summary,
+            'response': response,
         })
+
+
+class GetExtractedArguments(Resource):
+    def post(self, 
+            original_text_64, 
+            ):
+
+        original_text = base64.b64decode(original_text_64).decode('utf-8', errors='ignore')[:2000]
+        print("original_text:", original_text)
+        prompt = f"""Find the arguments in this article and repeat them, each on their own line: 
+{original_text}"""
+        response = get_ai_response(prompt)
+        return jsonify({
+            'response': response,
+        })
+
+
+class GetSDprompt(Resource):
+    def post(self, 
+            original_text_64, 
+            ):
+
+        original_text = base64.b64decode(original_text_64).decode('utf-8', errors='ignore')[:2000]
+        print("original_text:", original_text)
+        prompt = f"""Generate a stable diffusion prompt from this article:
+{original_text}"""
+        response = get_ai_response(prompt)
+        return jsonify({
+            'response': response,
+        })
+
+
+
 
 
 def create_app():
@@ -149,6 +174,8 @@ def create_app():
     api = Api(app)
 
     api.add_resource(GetSummary, "/api/summary/<string:original_text_64>")
+    api.add_resource(GetExtractedArguments, "/api/extract/<string:original_text_64>")
+    api.add_resource(GetSDprompt, "/api/generate/<string:original_text_64>")
 
 
     @app.route('/version')
