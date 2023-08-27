@@ -3,6 +3,20 @@
 <h2>🚀 Introduction : Your AI-Powered News Companion</h2>
 Simplify your reading experience with the News Article AI Assistant – your ultimate tool for effortlessly digesting a vast array of documents! 📰🤖
 
+<h2>📋 Table of Contents</h2>
+<ul>
+  <li><a href="#getting-started">Getting Started</a></li>
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#installation">Installation</a></li>
+  </ul>
+  <li><a href="#usage">Usage</a></li>
+  <ul>
+    <li><a href="#example">Example</a></li>
+  </ul>
+  <li><a href="#contributing">Contributing</a></li>
+  <li><a href="#Features">Features</a></li>
+</ul>
 
 # Features
 Summarization
