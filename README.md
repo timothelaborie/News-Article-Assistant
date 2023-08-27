@@ -10,10 +10,10 @@ Simplify your reading experience with the News Article AI Assistant – your ult
   - [Features](#features)
 
 # Features
-Feature 1: Article Summarization
-Feature 2:(Upcoming)
-Feature 3:(Upcoming)
-Feature 4:(Upcoming)
+1. **Article Summarization**
+2. **Feature 2 (Upcoming)**
+3. **Feature 3 (Upcoming)**
+4. **Feature 4 (Upcoming)**
 
 ## 🚦 Getting Started
 
