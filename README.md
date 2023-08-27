@@ -17,6 +17,15 @@ Simplify your reading experience with the News Article AI Assistant – your ult
   <li><a href="#contributing">Contributing</a></li>
   <li><a href="#Features">Features</a></li>
   
+
+
+
+# Features
+Summarization
+Feature 2 (Upcoming)
+Feature 3 (Upcoming)
+Feature 4 (Upcoming)
+
 <h2>🚦 Getting Started</h2>
 
 <h3>Prerequisites</h3>
@@ -29,20 +38,18 @@ Simplify your reading experience with the News Article AI Assistant – your ult
 <h3>Installation</h3>
 <ol>
   <li>Clone the repository.
-    <pre><code>git clone https://github.com/your-username/your-project.git
-    cd your-project</code></pre>
+    <pre><code>git clone https://github.com/faranbutt/News-Article-Assistant.git
+    cd News-Article-Assistant</code></pre>
   </li>
-  <li>Install the required Python libraries using pip.
+  <li>Install the required Python libraries located in the requirments.txt using pip.
     <pre><code>pip install -r requirements.txt</code></pre>
   </li>
 </ol>
 
 
-# Features
-Summarization
-Feature 2 (Upcoming)
-Feature 3 (Upcoming)
-Feature 4 (Upcoming)
+
+
+
 ## summarize article
 todo
 
