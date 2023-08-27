@@ -1,23 +1,16 @@
-# News-Article-Assistant AKA News Snapper 
+# News-Article-Assistant AKA News Snapper
 
-<h2>🚀 Introduction : Your AI-Powered News Companion</h2>
+## 🚀 Introduction: Your AI-Powered News Companion
 Simplify your reading experience with the News Article AI Assistant – your ultimate tool for effortlessly digesting a vast array of documents! 📰🤖
 
-<h2>📋 Table of Contents</h2>
-<ul>
-  <li><a href="#getting-started">Getting Started</a></li>
-  <ul>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#installation">Installation</a></li>
-  </ul>
-  <li><a href="#usage">Usage</a></li>
-  <ul>
-    <li><a href="#example">Example</a></li>
-  </ul>
-  <li><a href="#contributing">Contributing</a></li>
-  <li><a href="#Features">Features</a></li>
-  
-
+## 📋 Table of Contents
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+  - [Example](#example)
+- [Contributing](#contributing)
+- [Features](#features)
 
 
 # Features
@@ -26,24 +19,18 @@ Feature 2 (Upcoming)
 Feature 3 (Upcoming)
 Feature 4 (Upcoming)
 
-🚦 # Getting-Started 
-<h3>Prerequisites</h3>
-<p>Before you begin, ensure you have met the following requirements:</p>
-<ul>
-  <li>Python [version]</li>
-  <li>[Any other software or tools required]</li>
-</ul>
+## Features
+Feature 1: Summarization
+Feature 2: (Upcoming)
+Feature 3: (Upcoming)
+Feature 4: (Upcoming)
 
-<h3>Installation</h3>
-<ol>
-  <li>Clone the repository.
-    <pre><code>git clone https://github.com/faranbutt/News-Article-Assistant.git
-    cd News-Article-Assistant</code></pre>
-  </li>
-  <li>Install the required Python libraries located in the requirments.txt using pip.
-    <pre><code>pip install -r requirements.txt</code></pre>
-  </li>
-</ol>
+## 🚦 Getting Started
+### Prerequisites
+Before you begin, ensure you have met the following requirements:
+
+- Python [version]
+- [Any other software or tools required]
 
 
 
