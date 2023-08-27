@@ -22,7 +22,7 @@ Before you begin, ensure you have met the following requirements:
 - Enabled "Developer Mode" on Chrome
   
 ### Installation Guide
-1. Clone the repository.
+1. Clone the repository and change the working directory.
    ```sh
    git clone https://github.com/faranbutt/News-Article-Assistant
    cd News-Article-Assistant
