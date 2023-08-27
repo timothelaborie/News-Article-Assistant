@@ -17,8 +17,7 @@ Simplify your reading experience with the News Article AI Assistant – your ult
   <li><a href="#contributing">Contributing</a></li>
   <li><a href="#Features">Features</a></li>
   
-</ul>
-# Getting Started
+<h2>🚦 Getting Started</h2>
 
 <h3>Prerequisites</h3>
 <p>Before you begin, ensure you have met the following requirements:</p>
@@ -26,6 +25,18 @@ Simplify your reading experience with the News Article AI Assistant – your ult
   <li>Python [version]</li>
   <li>[Any other software or tools required]</li>
 </ul>
+
+<h3>Installation</h3>
+<ol>
+  <li>Clone the repository.
+    <pre><code>git clone https://github.com/your-username/your-project.git
+    cd your-project</code></pre>
+  </li>
+  <li>Install the required Python libraries using pip.
+    <pre><code>pip install -r requirements.txt</code></pre>
+  </li>
+</ol>
+
 
 # Features
 Summarization
