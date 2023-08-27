@@ -18,6 +18,10 @@ from bs4 import BeautifulSoup, Comment
 
 import base64
 
+import os
+PAT = os.environ.get("PAT")
+
+import re
 
 
 
@@ -49,8 +53,6 @@ def get_ai_response(prompt):
 
 
 
-    import os
-    PAT = os.environ.get("PAT")
 
     USER_ID = 'meta'
     APP_ID = 'Llama-2'
@@ -115,6 +117,70 @@ You are a helpful assistant. Always answer as helpfully as possible.
     
 
     return text
+
+
+
+
+
+
+
+def get_ai_image(prompt):
+    USER_ID = 'stability-ai'
+    APP_ID = 'stable-diffusion-2'
+    # Change these to whatever model and text URL you want to use
+    MODEL_ID = 'stable-diffusion-xl'
+    MODEL_VERSION_ID = '0c919cc1edfc455dbc96207753f178d7'
+
+
+    from clarifai_grpc.channel.clarifai_channel import ClarifaiChannel
+    from clarifai_grpc.grpc.api import resources_pb2, service_pb2, service_pb2_grpc
+    from clarifai_grpc.grpc.api.status import status_code_pb2
+
+    channel = ClarifaiChannel.get_grpc_channel()
+    stub = service_pb2_grpc.V2Stub(channel)
+
+    metadata = (('authorization', 'Key ' + PAT),)
+
+    userDataObject = resources_pb2.UserAppIDSet(user_id=USER_ID, app_id=APP_ID)
+
+    post_model_outputs_response = stub.PostModelOutputs(
+        service_pb2.PostModelOutputsRequest(
+            user_app_id=userDataObject,  # The userDataObject is created in the overview and is required when using a PAT
+            model_id=MODEL_ID,
+            version_id=MODEL_VERSION_ID,  # This is optional. Defaults to the latest model version
+            inputs=[
+                resources_pb2.Input(
+                    data=resources_pb2.Data(
+                        text=resources_pb2.Text(
+                            raw=prompt
+                        )
+                    )
+                )
+            ]
+        ),
+        metadata=metadata
+    )
+    if post_model_outputs_response.status.code != status_code_pb2.SUCCESS:
+        print(post_model_outputs_response.status)
+        raise Exception("Post model outputs failed, status: " + post_model_outputs_response.status.description)
+
+    # Since we have one input, one output will exist here
+    image_data = post_model_outputs_response.outputs[0].data.image.base64
+
+    # Encode the image data into a base64 string
+    base64_encoded = base64.b64encode(image_data).decode('utf-8')
+
+    # Return the base64-encoded image data
+    base64_image = f"data:image/png;base64,{base64_encoded}"
+
+    return base64_image
+
+
+
+
+
+
+
     
 
 
@@ -124,7 +190,7 @@ class GetSummary(Resource):
             ):
 
         original_text = base64.b64decode(original_text_64).decode('utf-8', errors='ignore')[:2000]
-        print("original_text:", original_text)
+        print("GetSummary original_text:", original_text)
         prompt = f"""Summarize this article: 
 {original_text}"""
         response = get_ai_response(prompt)
@@ -139,7 +205,7 @@ class GetExtractedArguments(Resource):
             ):
 
         original_text = base64.b64decode(original_text_64).decode('utf-8', errors='ignore')[:2000]
-        print("original_text:", original_text)
+        print("GetExtractedArguments original_text:", original_text)
         prompt = f"""Find the arguments in this article and repeat them, each on their own line: 
 {original_text}"""
         response = get_ai_response(prompt)
@@ -154,7 +220,7 @@ class GetSDprompt(Resource):
             ):
 
         original_text = base64.b64decode(original_text_64).decode('utf-8', errors='ignore')[:2000]
-        print("original_text:", original_text)
+        print("GetSDprompt original_text:", original_text)
         prompt = f"""Generate a stable diffusion prompt from this article:
 {original_text}"""
         response = get_ai_response(prompt)
@@ -162,6 +228,18 @@ class GetSDprompt(Resource):
             'response': response,
         })
 
+
+class GetSDimage(Resource):
+    def post(self, 
+            original_text_64, 
+            ):
+
+        original_text = base64.b64decode(original_text_64).decode('utf-8', errors='ignore')[:2000]
+        print("GetSDimage original_text:", original_text)
+        response = get_ai_image(original_text)
+        return jsonify({
+            'response': response,
+        })
 
 
 
@@ -175,7 +253,8 @@ def create_app():
 
     api.add_resource(GetSummary, "/api/summary/<string:original_text_64>")
     api.add_resource(GetExtractedArguments, "/api/extract/<string:original_text_64>")
-    api.add_resource(GetSDprompt, "/api/generate/<string:original_text_64>")
+    api.add_resource(GetSDprompt, "/api/generate_prompt/<string:original_text_64>")
+    api.add_resource(GetSDimage, "/api/generate_image/<string:original_text_64>")
 
 
     @app.route('/version')

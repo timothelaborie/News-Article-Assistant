@@ -150,6 +150,10 @@
     color: #000000;
     background-color: #DBEAFE;
   }
+
+  #response_img{
+    max-width: 90%;
+  }
 </style>
 
 <body>
@@ -160,11 +164,18 @@
     <div class="btns">
       <button id="summarize">Summarize article</button><br>
       <button id="extract">Extract arguments</button><br>
-      <button id="generate">Generate Image</button><br>
+      <button id="generate_prompt">Generate SD prompt</button><br>
+      <button id="generate_image">Generate SD image</button><br>
     </div>
     <br>
-    <h2>Response</h2>
-    <textarea id="response" rows="20" cols="100" readonly></textarea><br>
+    <div id="textresponse" style="display: none;">
+      <h2>Loading</h2>
+      <textarea id="response" rows="20" cols="100" readonly></textarea><br>
+    </div>
+    <div id="imgresponse" style="display: none;">
+      <h2>Loading</h2>
+      <img id="response_img" src="" alt="">
+    </div>
   </div>
 
 
