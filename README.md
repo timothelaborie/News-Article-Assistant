@@ -26,8 +26,7 @@ Feature 2 (Upcoming)
 Feature 3 (Upcoming)
 Feature 4 (Upcoming)
 
-<h2>🚦 Getting Started</h2>
-
+🚦 # Getting-Started 
 <h3>Prerequisites</h3>
 <p>Before you begin, ensure you have met the following requirements:</p>
 <ul>
