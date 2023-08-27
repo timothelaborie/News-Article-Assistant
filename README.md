@@ -1,17 +1,19 @@
-## Development TO-DO 
-Summarization
-
+# News-Article-Assistant AKA News Snapper 
+<h2>🚀 Introduction : Your AI-Powered News Companion</h2>
+Simplify your reading experience with the News Article AI Assistant – your ultimate tool for effortlessly digesting a vast array of documents! 📰🤖
 
 ## 📋 Table of Contents
 
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
-  - [Example](#example)
-- [Contributing](#contributing)  
-- [License](#license)
-- [Contact](#contact)
+  - [Features](#features)
+
+# Features
+Feature 1: Article Summarization
+Feature 2:(Upcoming)
+Feature 3:(Upcoming)
+Feature 4:(Upcoming)
 
 ## 🚦 Getting Started
 
@@ -19,8 +21,8 @@ Summarization
 
 Before you begin, ensure you have met the following requirements:
 
-- Python [version]
-- [Any other software or tools required]
+- Python 
+- Enabled Chrome "Developer Mode
 
 ### Installation
 
@@ -30,3 +32,5 @@ Before you begin, ensure you have met the following requirements:
    cd News-Article-Assistant
    
 # NOTE: Llama2 & Clarifai Hackathon Submission: 28/08/2023
+## Development TO-DO 
+Summarization
