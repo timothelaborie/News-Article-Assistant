@@ -1,16 +1,19 @@
-# <h1>News-Article-Assistant </h1>
+# News-Article-Assistant AKA News Snapper 
 
- 
-# News-Article-Assistant
-Submission for the Llama 2 Hackathon with Clarifai 28/08/2023 
+<h2>🚀 Introduction : Your AI-Powered News Companion</h2>
+Simplify your reading experience with the News Article AI Assistant – your ultimate tool for effortlessly digesting a vast array of documents! 📰🤖
 
 
 # Features
-News Snapper: "Your AI-Powered News Companion"
-
+Summarization
+Feature 2 (Upcoming)
+Feature 3 (Upcoming)
+Feature 4 (Upcoming)
 ## summarize article
 todo
 
 
 # How to install on chrome
 Download the repo, extract the zip, go to your browser extensions, enable developer mode, click "load unpacked" and select the extracted "extension" folder
+
+Submission for the Llama 2 Hackathon with Clarifai 28/08/2023 
