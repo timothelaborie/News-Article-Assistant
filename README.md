@@ -26,6 +26,9 @@ Before you begin, ensure you have met the following requirements:
    ```sh
    git clone https://github.com/faranbutt/News-Article-Assistant
    cd News-Article-Assistant
+2. Run the server.py.
+   ```sh
+   python server.py --host 127.0.0.1 --port 8000 --debug
    
 ## 📖 Usage Guide
 
