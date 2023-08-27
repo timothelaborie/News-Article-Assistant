@@ -3,6 +3,7 @@
 <h2>🚀 Introduction : Your AI-Powered News Companion</h2>
 Simplify your reading experience with the News Article AI Assistant – your ultimate tool for effortlessly digesting a vast array of documents! 📰🤖
 
+<img src="link_to_demo_screenshot_or_gif" alt="Project Demo" />
 <h2>📋 Table of Contents</h2>
 <ul>
   <li><a href="#getting-started">Getting Started</a></li>
