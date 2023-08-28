@@ -12,8 +12,9 @@ Simplify your reading experience with the News Article AI Assistant – your ult
 
 # Features
 1. **Article Summarization**
-2. **Feature 2 (Upcoming)**
-3. **Feature 3 (Upcoming)**
+2. **Argument Extraction**
+3. **Stable Diffusion prompt generator**
+4. **Stable Diffusion image generator**
 
 ## 🚦 Getting Started
 ### Prerequisites
