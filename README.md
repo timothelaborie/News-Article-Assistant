@@ -19,9 +19,8 @@ Simplify your reading experience with the News Article AI Assistant – your ult
 ### Prerequisites
 Before you begin, ensure you have met the following requirements:
 - Python 
-- Enabled "Developer Mode" on Chrome
   
-### Installation Guide
+### Server Installation Guide
 1. Clone the repository and change the working directory.
    ```sh
    git clone https://github.com/faranbutt/News-Article-Assistant
@@ -31,10 +30,10 @@ Before you begin, ensure you have met the following requirements:
    pip install -r requirements.txt
 3. Run the server.py.
    ```sh
-   python server.py --host 127.0.0.1 --port 8000 --debug   
+   python server.py --host 127.0.0.1 --port 8000 --debug
 ## 📖 Usage Guide
 
-To effectively our application, follow these steps:
+### Extension Installation Guide
 1. **Open the Chrome Browser**
    - Launch your Google Chrome web browser.
 2. **Access Extension Settings**
