@@ -1,5 +1,5 @@
-# News-Article-Assistant AKA News Snapper 
-<h2>🚀 Introduction : Your AI-Powered News Companion</h2>
+# IntelliSum (Chrome Extension)
+<h2>🚀 Introduction : Your AI-Powered Text Summarizer</h2>
 Simplify your reading experience with the News Article AI Assistant – your ultimate tool for effortlessly digesting a vast array of documents! 📰🤖
 
 ## 📋 Table of Contents
@@ -50,4 +50,14 @@ Before you begin, ensure you have met the following requirements:
    - 🎉 Now you've done all the necessary steps you're good to go 
 
 NOTE: Llama2 & Clarifai Hackathon Submission: 28/08/2023
+
+## Contributors
+
+| Name            | Link                                   |
+| --------------- | -------------------------------------- |
+| Dhairya Shah | https://www.linkedin.com/in/dhairya-shah/ |
+| Faran Taimoor Butt | https://www.linkedin.com/in/faranbutt/ |
+| Homan | https://www.linkedin.com/in/homan-mirgolbabaee/ |
+| Timothé Laborie  | https://github.com/timothelaborie|
+| Rijul  | https://github.com/rijul|
 
