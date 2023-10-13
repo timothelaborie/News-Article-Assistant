@@ -1,14 +1,6 @@
 # IntelliSum (Chrome Extension)
 <h2>🚀 Introduction : Your AI-Powered Text Summarizer</h2>
-Simplify your reading experience with the News Article AI Assistant – your ultimate tool for effortlessly digesting a vast array of documents! 📰🤖
-
-## 📋 Table of Contents
-
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Features](#features)
-  - [Usage](#usage)
+This chrome extension makes it easier to read and understand news articles
 
 # Features
 1. **Article Summarization**
@@ -16,27 +8,12 @@ Simplify your reading experience with the News Article AI Assistant – your ult
 3. **Stable Diffusion prompt generator**
 4. **Stable Diffusion image generator**
 
-## 🚦 Getting Started
-### Prerequisites
-Before you begin, ensure you have met the following requirements:
-- Python 
-  
-### Server Installation Guide
-1. Clone the repository and change the working directory.
-   ```sh
-   git clone https://github.com/faranbutt/News-Article-Assistant
-   cd News-Article-Assistant
-2. Install all the necessary dependencies using pip.
-   ```sh
-   pip install -r requirements.txt
-3. Run the server.py.
-   ```sh
-   python server.py --host 127.0.0.1 --port 8000 --debug
-## 📖 Usage Guide
+# Screenshot
+![sc](https://github.com/timothelaborie/News-Article-Assistant/blob/main/intellisum.PNG?raw=true)
 
-### Extension Installation Guide
+# Extension Installation Guide
 1. **Open the Chrome Browser**
-   - Launch your Google Chrome web browser.
+   - Launch your web browser.
 2. **Access Extension Settings**
    - Click on ⋮ the top-right corner to open the Chrome menu.
    - Navigate to "More tools" & select "Extensions."
@@ -49,15 +26,17 @@ Before you begin, ensure you have met the following requirements:
 5. **Start Using the Assistant**
    - 🎉 Now you've done all the necessary steps you're good to go 
 
-NOTE: Llama2 & Clarifai Hackathon Submission: 28/08/2023
+# Hackathon Link
 
-## Contributors
+Hackathon [Submission](https://lablab.ai/event/llama-2-hackathon-with-clarifai/alpacas/intellisum-intelligent-summarizer-for-text)
 
-| Name            | Link                                   |
-| --------------- | -------------------------------------- |
-| Dhairya Shah | https://www.linkedin.com/in/dhairya-shah/ |
-| Faran Taimoor Butt | https://www.linkedin.com/in/faranbutt/ |
-| Homan | https://www.linkedin.com/in/homan-mirgolbabaee/ |
-| Timothé Laborie  | https://github.com/timothelaborie|
-| Rijul  | https://github.com/rijul|
+
+# Contributors
+
+| Name            | Link                                   |  Contribution  |
+| --------------- | -------------------------------------- | ---------  |
+| Timothé Laborie  | [https://www.linkedin.com/in/timothe-laborie/](https://www.linkedin.com/in/timoth%C3%A9-laborie-2128171a2/)| Frontend and backend development |
+| Faran Taimoor Butt | https://www.linkedin.com/in/faranbutt/ | CSS Styling and cover image |
+| Dhairya Shah | https://www.linkedin.com/in/dhairya-shah/ | Slides |
+| Homan M | https://www.linkedin.com/in/homan-mirgolbabaee/ | Slides |
 
